@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Freelance Gig Machine — Member Area</title>
+<style>
+  :root{--bg:#0b0f14;--card:#151b24;--accent:#37f5c4;--text:#e8edf2;--muted:#9aa7b4}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;padding:24px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{text-align:center;padding:32px 0 16px}
+  h1{font-size:28px;margin-bottom:6px}
+  .sub{color:var(--muted)}
+  .card{background:var(--card);border-radius:14px;padding:22px;margin:16px 0;border:1px solid #222c38}
+  h2{color:var(--accent);font-size:20px;margin-bottom:10px}
+  h3{font-size:16px;margin:14px 0 6px}
+  ul{margin-left:18px}
+  li{margin:6px 0}
+  .tag{display:inline-block;background:#0e2a1b;color:var(--accent);font-size:12px;padding:3px 10px;border-radius:20px;margin-bottom:10px}
+  .cta{display:block;text-align:center;background:var(--accent);color:#04130a;font-weight:700;text-decoration:none;padding:14px;border-radius:10px;margin-top:18px}
+  .feed{background:#0e1620;border-left:3px solid var(--accent);padding:14px 16px;margin:10px 0;border-radius:0 8px 8px 0}
+  .feed .date{color:var(--muted);font-size:12px}
+  footer{text-align:center;color:var(--muted);font-size:13px;padding:24px 0}
+  .role{background:#0e1620;border:1px solid #222c38;border-radius:10px;padding:12px 14px;margin:10px 0}
+  .role .co{color:var(--accent);font-weight:700}
+  .role .meta{color:var(--muted);font-size:13px;margin:4px 0}
+  .verdict{font-size:13px;color:#cfe9d8}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Freelance Gig Machine</h1>
+    <p class="sub">Welcome. Your client-landing system. Updated weekly with fresh gigs.</p>
+    <span class="tag">LIFETIME ACCESS · WEEKLY GIGS</span>
+  </header>
+
+  <div class="card">
+    <h2>1 · Niche Pick Formula</h2>
+    <p>Don't bid on "anything." Pick a niche with proven dollar demand + low African competition. In 2026 the strongest for Africans:</p>
+    <ul>
+      <li><b>AI-assisted content/copy</b> (blogs, product descriptions, newsletters)</li>
+      <li><b>Short-form video editing</b> (TikTok/Reels for creators & coaches)</li>
+      <li><b>Lead-gen / cold-email setup</b> (for small businesses)</li>
+      <li><b>No-code automation</b> (Zapier/Make for SMEs)</li>
+      <li><b>Data annotation / AI training tasks</b> (DataAnnotation, Outlier)</li>
+    </ul>
+    <h3>Pick prompt</h3>
+    <div class="feed">"Act as a freelance strategist. Given my skill in [SKILL], list 3 niches on Upwork/Fiverr with high dollar demand and low competition from Africa. For each: average rate, what a first project looks like, and the exact service to offer."</div>
+  </div>
+
+  <div class="card">
+    <h2>2 · Profile Build Prompts</h2>
+    <div class="feed">"Rewrite my freelance profile for [PLATFORM]. USD-rate positioning. Lead with results, not tasks. Include: one-line value prop, 3 service packages with prices, and a portfolio description that proves outcomes. Tone: confident, specific, no fluff."</div>
+    <p class="sub" style="margin-top:8px">Attach 2–3 past samples (even personal projects) so the AI writes around real proof.</p>
+  </div>
+
+  <div class="card">
+    <h2>3 · Proposal & Pitch Pack (20)</h2>
+    <h3>Winning proposal (fill in)</h3>
+    <div class="feed">"Hi [Name], I saw your post for [task]. I've delivered [result] for [client type] and can turn around [deliverable] in [time]. I work async with daily updates. Here are 2 examples. I can start a paid 1-day trial so you see output before committing."</div>
+    <h3>The trial close</h3>
+    <div class="feed">"To remove risk, I'll do the first [deliverable] as a paid trial at $[low]. If it's not what you need, you don't continue. Most clients keep me after week one."</div>
+    <p class="sub">Full 20-proposal pack is in <a href="freelance-proposals.html" style="color:var(--accent)">freelance-proposals.html →</a>.</p>
+  </div>
+
+  <div class="card">
+    <h2>4 · Pricing & Rate Ladder</h2>
+    <ul>
+      <li><b>Week 1–2:</b> $50–$150 fixed projects to bank 5 reviews. Never start at $5.</li>
+      <li><b>Week 3–6:</b> $200–$500 projects; introduce hourly at $20–$30.</li>
+      <li><b>Month 2+:</b> $40–$80/hr or $1k+ monthly retainers.</li>
+    </ul>
+    <div class="feed">"My rate is $[X] because deliverables include [A, B, C] and a 1-revision guarantee. I onboard within 24h."</div>
+  </div>
+
+  <div class="card">
+    <h2>5 · Client Retention System</h2>
+    <ul>
+      <li>Deliver 1 day early; send a 3-line progress note daily.</li>
+      <li>After delivery: "Want me to handle [next recurring task] monthly?"</li>
+      <li>Every 3rd project: offer a discounted retainer.</li>
+    </ul>
+    <div class="feed">"Glad [result] landed. If you'd like, I can take [recurring task] off your plate at $[retainer]/mo — first month at 20% off. Want me to draft the scope?"</div>
+  </div>
+
+  <div class="card">
+    <h2>6 · This Week's Live Gigs</h2>
+    <p class="sub">Vetted freelance posts hiring from Africa. Refreshed every Monday by the agent team. Apply via official links only.</p>
+    <div id="feed"><p class="sub">Loading latest gigs…</p></div>
+    <p class="sub" style="margin-top:8px">The agent team refreshes this section every Monday (freelance-feed.json).</p>
+  </div>
+
+  <a class="cta" href="https://euphonious-flan-2e89b3.netlify.app/">← Back to site · Questions? enochchibuchinkwo@gmail.com</a>
+  <footer>Freelance Gig Machine · 7-day refund, no questions · Updated weekly</footer>
+</div>
+<script>
+fetch('freelance-feed.json').then(r=>r.json()).then(d=>{
+  const box=document.getElementById('feed');
+  box.innerHTML='<div class="feed"><span class="date">Updated '+d.updated+' · next refresh Mon</span><br>'+d.note+'</div>';
+  d.gigs.forEach(r=>{
+    const el=document.createElement('div');
+    el.className='role';
+    el.innerHTML='<div class="co">'+r.platform+'</div>'+
+      '<div class="meta"><b>'+r.gig+'</b> · '+r.pay+'</div>'+
+      '<div class="meta">'+r.who+'</div>'+
+      '<div class="verdict">✓ '+r.verdict+'</div>'+
+      '<div class="meta"><a href="'+r.link+'" style="color:var(--accent)">Official link →</a></div>';
+    box.appendChild(el);
+  });
+}).catch(e=>{
+  document.getElementById('feed').innerHTML='<p class="sub">Weekly gigs temporarily unavailable — check back Monday. Core proposals above are always live.</p>';
+});
+</script>
+</body>
+</html>

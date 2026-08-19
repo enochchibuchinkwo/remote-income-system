@@ -1,0 +1,46 @@
+{
+  "updated": "2026-08-11",
+  "note": "Verified freelance posts hiring from Africa. Refreshed weekly by the agent team. Apply only through the official link — never pay to 'get hired'.",
+  "gigs": [
+    {
+      "platform": "Upwork",
+      "gig": "Virtual Assistant (Africa-friendly, USD)",
+      "pay": "$5–$15/hr starting",
+      "who": "Beginners; fixed-price $50–$200 jobs to build reviews",
+      "link": "https://www.upwork.com/",
+      "verdict": "Legit. Free to join. Start with small fixed-price to bank reviews."
+    },
+    {
+      "platform": "Fiverr",
+      "gig": "Sell a defined gig (CV, editing, social posts)",
+      "pay": "$20–$500 per gig",
+      "who": "Anyone with a marketable skill",
+      "link": "https://www.fiverr.com/",
+      "verdict": "Legit. Set your own rate. Bundle into packages."
+    },
+    {
+      "platform": "DataAnnotation.tech",
+      "gig": "AI Trainer / Data Labeler",
+      "pay": "$15–$30/hr",
+      "who": "Open global signup, no degree",
+      "link": "https://www.dataannotation.tech/",
+      "verdict": "Legit, open enrollment. Steady micro-tasks."
+    },
+    {
+      "platform": "Toptal",
+      "gig": "Top 3% freelancers (dev, design, finance)",
+      "pay": "$50–$150/hr",
+      "who": "Experienced; high vetting bar",
+      "link": "https://www.toptal.com/",
+      "verdict": "Legit, high pay. Build portfolio first, then apply."
+    },
+    {
+      "platform": "We Work Remotely",
+      "gig": "Freelance CS / writing / ops",
+      "pay": "$15–$50/hr",
+      "who": "Africans; filter 'worldwide'",
+      "link": "https://weworkremotely.com/",
+      "verdict": "Legit board. No fee to apply."
+    }
+  ]
+}

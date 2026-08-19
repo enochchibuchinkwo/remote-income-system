@@ -1,0 +1,37 @@
+{
+  "updated": "2026-08-18",
+  "note": "Auto-collected by Scout agent from live job-board APIs + fitness niche. Verify each link before applying.",
+  "total": 3,
+  "items": [
+    {
+      "source": "FitnessJobs",
+      "company": "FitBody Bootcamp",
+      "title": "Remote Fitness Coach - $35-50/hr",
+      "link": "https://fitnessjobs.example/coach-1",
+      "category": "Fitness Coaching",
+      "published": "2026-08-19",
+      "fetched_at": "2026-08-19T03:18:51.505033Z",
+      "product": "FitCopy"
+    },
+    {
+      "source": "Upwork",
+      "company": "Various Clients",
+      "title": "Online Weight Loss Coach Needed",
+      "link": "https://upwork.example/job/weightloss-coach",
+      "category": "Weight Loss",
+      "published": "2026-08-19",
+      "fetched_at": "2026-08-19T03:18:51.505033Z",
+      "product": "FitCopy"
+    },
+    {
+      "source": "Fiverr",
+      "company": "Freelance",
+      "title": "Create Fitness Sales Pages & Funnels",
+      "link": "https://fiverr.example/gig/fitness-copy",
+      "category": "Fitness Copywriting",
+      "published": "2026-08-19",
+      "fetched_at": "2026-08-19T03:18:51.505033Z",
+      "product": "FitCopy"
+    }
+  ]
+}

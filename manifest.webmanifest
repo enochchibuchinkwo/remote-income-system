@@ -1,0 +1,25 @@
+{
+  "name": "Remote Income System",
+  "short_name": "RemoteIncome",
+  "description": "Land a dollar-paying remote job from Nigeria & Africa. AI resume engine, vetted platforms, weekly live feed.",
+  "start_url": "/aura.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#05070f",
+  "theme_color": "#05070f",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

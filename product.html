@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Remote Income System — Member Area</title>
+<style>
+  :root{--bg:#0b0f14;--card:#151b24;--accent:#1db954;--text:#e8edf2;--muted:#9aa7b4}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;padding:24px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{text-align:center;padding:32px 0 16px}
+  h1{font-size:28px;margin-bottom:6px}
+  .sub{color:var(--muted)}
+  .card{background:var(--card);border-radius:14px;padding:22px;margin:16px 0;border:1px solid #222c38}
+  h2{color:var(--accent);font-size:20px;margin-bottom:10px}
+  h3{font-size:16px;margin:14px 0 6px}
+  ul{margin-left:18px}
+  li{margin:6px 0}
+  .tag{display:inline-block;background:#0e2a1b;color:var(--accent);font-size:12px;padding:3px 10px;border-radius:20px;margin-bottom:10px}
+  .cta{display:block;text-align:center;background:var(--accent);color:#04130a;font-weight:700;text-decoration:none;padding:14px;border-radius:10px;margin-top:18px}
+  .feed{background:#0e1620;border-left:3px solid var(--accent);padding:14px 16px;margin:10px 0;border-radius:0 8px 8px 0}
+  .feed .date{color:var(--muted);font-size:12px}
+  footer{text-align:center;color:var(--muted);font-size:13px;padding:24px 0}
+  .role{background:#0e1620;border:1px solid #222c38;border-radius:10px;padding:12px 14px;margin:10px 0}
+  .role .co{color:var(--accent);font-weight:700}
+  .role .meta{color:var(--muted);font-size:13px;margin:4px 0}
+  .verdict{font-size:13px;color:#cfe9d8}
+  .warn{background:#2a1d10;border-left:3px solid #e0a23b;padding:10px 14px;border-radius:0 8px 8px 0;margin:12px 0;color:#f4e3c6}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+
+<script>
+// ACCESS CONTROL — Verify payment before showing content
+(function() {
+  const ref = new URLSearchParams(window.location.search).get('ref');
+  const cookieMatch = document.cookie.match(/ris_access=([^;]+)/);
+  const storedRef = localStorage.getItem('ris_access');
+  
+  if (ref) {
+    localStorage.setItem('ris_access', ref);
+    document.cookie = "ris_access=" + ref + "; Path=/; Secure; SameSite=Lax; Max-Age=31536000";
+    return;
+  }
+  
+  if (!cookieMatch && !storedRef) {
+    window.location.href = "/index.html";
+    return;
+  }
+  
+  if (cookieMatch && !storedRef) {
+    localStorage.setItem('ris_access', cookieMatch[1]);
+  }
+})();
+</script>
+
+  <header>
+    <h1>Remote Income System</h1>
+    <p class="sub">Welcome. This is your member area. Updated every week with fresh, real opportunities.</p>
+    <span class="tag">LIFETIME ACCESS · WEEKLY UPDATES</span>
+  </header>
+
+  <div class="card">
+    <h2>1 · AI Resume & Cover Letter Prompt Pack</h2>
+    <p>Paste your current CV and the role you want. The prompts rebuild it for dollar employers — not the local market.</p>
+    <h3>Resume rewrite prompt</h3>
+    <div class="feed">"You are a senior recruiter for US/UK remote companies hiring from Africa. Rewrite my CV: (a) remove all local-only context, (b) lead with measurable impact, (c) use US spelling, (d) add a 'Remote Tools' line (Slack, Zoom, Notion, Trello, Google Workspace), (e) keep it to one page. Here is my current CV:"</div>
+    <h3>Cover letter prompt</h3>
+    <div class="feed">"Write a 150-word cover letter for [ROLE] at [COMPANY] using my CV. Open with a specific result I've delivered."</div>
+    <p class="sub" style="margin-top:10px">Run these in chat.openai.com or claude.ai (free tier works). Paste your CV after the prompt.</p>
+  </div>
+
+  <div class="card">
+    <h2>2 · 50+ Vetted Platforms That Hire From Africa</h2>
+    <p>The full list is maintained as a living page: <a href="platforms.html" style="color:var(--accent)">open the full platform guide →</a>. Core entries to start with today:</p>
+    <ul>
+      <li><b>Upwork</b> — biggest freelance marketplace; start with fixed-price $50–$200 jobs to build reviews.</li>
+      <li><b>Fiverr</b> — sell a defined "gig" (e.g. "I'll write your remote-job CV in 24h").</li>
+      <li><b>We Work Remotely</b> — no-fee job board, strong on CS/marketing ops roles.</li>
+      <li><b>Remotive</b> — curated remote jobs, filter by "worldwide".</li>
+      <li><b>Turing</b> — for engineers; vets you then places at US companies, paid in USD.</li>
+      <li><b>Toptal</b> — top 3% freelancers; high bar, high pay.</li>
+      <li><b>Wellfound (AngelList)</b> — startups hiring globally.</li>
+      <li><b>LinkedIn</b> — filter "Remote" + target international companies; 70% of roles filled via network.</li>
+      <li><b>Remote4Africa</b> — Africa-focused board (see feed below).</li>
+      <li><b>Andela / DataAnnotation / Outsource Global / Teleperformance</b> — see this week's live feed.</li>
+    </ul>
+    <p class="sub">Replace [X] with your real numbers. The full 50+ list (with pay ranges + who they want) is in platforms.html.</p>
+  </div>
+
+  <div class="card">
+    <h2>3 · Interview Script Pack (20 questions)</h2>
+    <h3>"Why should we hire you from Nigeria?"</h3>
+    <div class="feed">"I work async by default, I've delivered for [X] clients across time zones, and my setup is fully remote-ready. My location is an advantage on cost and hours overlap with EU/US mornings."</div>
+    <h3>"What's your rate?"</h3>
+    <div class="feed">"For this scope I work at $X/hr (or $Y fixed). I can start with a paid 1-week trial so you see output before committing."</div>
+    <h3>Handling "do you have a degree?"</h3>
+    <div class="feed">"I have [certs/portfolio]. For this role the proof is in delivered work — here are three examples comparable to what you need."</div>
+    <h3>+ 17 more in the pack</h3>
+    <p class="sub">Full 20-question script pack (salary negotiation, time-zone objections, "show me your work", trial-week closes, follow-up emails) is in <a href="interview.html" style="color:var(--accent)">interview.html →</a>.</p>
+  </div>
+
+  <div class="card">
+    <h2>4 · Freelance Pitch Templates</h2>
+    <h3>Cold pitch (Upwork/Email)</h3>
+    <div class="feed">"Hi [Name], I saw your post for [role]. I've delivered [result] for [client type] and can turn around [specific deliverable] in [timeframe]. I work async and send daily progress. Can I share 2 examples? Happy to do a paid 1-day trial."</div>
+    <h3>Proposal close</h3>
+    <div class="feed">"Scope: [X]. Deliverable: [Y]. Timeline: [Z]. Price: $ fixed or $/hr. Includes 1 revision. I start within 24h of approval."</div>
+    <p class="sub">5 ready-to-send templates (cold, proposal, follow-up, trial-offer, referral-ask) are in <a href="pitch.html" style="color:var(--accent)">pitch.html →</a>.</p>
+  </div>
+
+  <div class="card">
+    <h2>5 · Visa & Relocation Lite Guide</h2>
+    <ul>
+      <li><b>Digital Nomad visas</b> — Portugal, Spain, Estonia, Croatia, Cape Verde offer remote-worker visas; proof of $ income required, not employer sponsorship.</li>
+      <li><b>Employer-sponsored</b> — US H-1B / O-1, UK Skilled Worker, Canada Global Talent: your remote employer files for you after you're hired.</li>
+      <li><b>Study route</b> — short certifications in visa-friendly countries open a foot in the door.</li>
+      <li><b>Stay-remote path</b> — most earn dollars without ever relocating; keep Nigerian residency + USD income.</li>
+    </ul>
+    <div class="warn">⚠️ Never pay a "relocation agent" or "visa broker" upfront. All official visas are applied for directly or via the employer. Any broker demanding fees before a job offer is a scam.</div>
+  </div>
+
+  <div class="card">
+    <h2>6 · This Week's Live Opportunities</h2>
+    <p class="sub">Verified roles hiring remote talent from Africa. Auto-refreshed by the agent team every Monday. <b>Apply only through the official link.</b></p>
+    <div id="feed"><p class="sub">Loading latest roles…</p></div>
+    <p class="sub" style="margin-top:8px">The agent team refreshes this section every Monday from live web research (feed.json).</p>
+  </div>
+
+  <a class="cta" href="https://euphonious-flan-2e89b3.netlify.app/">← Back to site · Questions? reply to your purchase email</a>
+  <footer>Remote Income System · 7-day refund, no questions · Updated weekly</footer>
+</div>
+<script>
+fetch('feed.json').then(r=>r.json()).then(d=>{
+  const box=document.getElementById('feed');
+  box.innerHTML='<div class="feed"><span class="date">Updated '+d.updated+' · next refresh Mon</span><br>'+d.note+'</div>';
+  d.roles.forEach(r=>{
+    const el=document.createElement('div');
+    el.className='role';
+    el.innerHTML='<div class="co">'+r.company+'</div>'+
+      '<div class="meta"><b>'+r.role+'</b> · '+r.pay+'</div>'+
+      '<div class="meta">'+r.who+'</div>'+
+      '<div class="verdict">✓ '+r.verdict+'</div>'+
+      '<div class="meta"><a href="'+r.link+'" style="color:var(--accent)">Official link →</a></div>';
+    box.appendChild(el);
+  });
+}).catch(e=>{
+  document.getElementById('feed').innerHTML='<p class="sub">Weekly feed temporarily unavailable — check back Monday. Core platforms above are always live.</p>';
+});
+</script>
+</body>
+</html>

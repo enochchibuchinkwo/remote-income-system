@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Remote Income System — See Your Dollar-Earning Potential</title>
+<link rel="manifest" href="/manifest.webmanifest" />
+<meta name="theme-color" content="#05070f" />
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => navigator.serviceWorker.register("/sw.js").catch(() => {}));
+  }
+</script>
+<style>
+  :root{
+    --bg:#05070f; --acc:#37f5c4; --acc2:#6c8bff; --txt:#eaf0ff; --mut:#9fb0d8;
+    --grad:linear-gradient(135deg,#37f5c4,#6c8bff);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--txt);line-height:1.55;overflow-x:hidden}
+  /* scroll-aura hero */
+  .hero{position:relative;height:100vh;min-height:620px;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center}
+  .bg{position:absolute;inset:0;background:
+      radial-gradient(1200px 700px at 70% -10%, rgba(108,139,255,.25), transparent 60%),
+      radial-gradient(900px 600px at 10% 20%, rgba(55,245,196,.18), transparent 55%),
+      #05070f;
+    z-index:0}
+  .orb{position:absolute;border-radius:50%;filter:blur(60px);opacity:.5;z-index:0;animation:float 14s ease-in-out infinite}
+  .o1{width:380px;height:380px;background:#6c8bff;top:8%;left:12%}
+  .o2{width:300px;height:300px;background:#37f5c4;bottom:10%;right:14%;animation-delay:-7s}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-40px)}}
+  .hero-inner{position:relative;z-index:2;max-width:760px;padding:0 20px}
+  .kick{display:inline-block;font-size:13px;color:var(--acc);border:1px solid #1c5b48;background:#0f2a22;padding:7px 14px;border-radius:999px;margin-bottom:18px}
+  h1{font-size:clamp(30px,5vw,52px);font-weight:800;line-height:1.1;margin-bottom:14px}
+  h1 b{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:var(--mut);font-size:18px;max-width:560px;margin:0 auto 26px}
+  .cta{display:inline-block;background:var(--grad);color:#04121a;font-weight:800;font-size:17px;border:none;border-radius:14px;padding:16px 34px;cursor:pointer;text-decoration:none;animation:pulse 2.4s ease-in-out infinite}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+  .trust{color:var(--mut);font-size:13px;margin-top:12px}
+  /* reveal on scroll */
+  .reveal{opacity:0;transform:translateY(40px);transition:all .8s ease}
+  .reveal.in{opacity:1;transform:none}
+  section{padding:70px 20px;max-width:900px;margin:0 auto}
+  .glass{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:28px;backdrop-filter:blur(10px)}
+  h2{font-size:28px;font-weight:800;margin-bottom:16px}
+  p{color:var(--mut);font-size:16px;margin-bottom:12px}
+  /* scorecard */
+  .score-wrap{display:flex;gap:24px;flex-wrap:wrap;justify-content:center;margin:30px 0}
+  .score-card{width:200px;height:240px;border-radius:20px;background:linear-gradient(160deg,#0f1530,#101a3a);border:1px solid #2a3360;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+  .score-num{font-size:64px;font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .score-lbl{color:var(--mut);font-size:13px;margin-top:6px}
+  .quiz{margin-top:20px;text-align:left}
+  .q{margin-bottom:18px}
+  .q span{display:block;font-weight:700;margin-bottom:8px}
+  .q label{display:block;color:var(--mut);font-size:14px;padding:8px 12px;border:1px solid #2a3360;border-radius:10px;margin-bottom:6px;cursor:pointer}
+  .q input{display:none}
+  .q input:checked + label{background:#0f2a22;border-color:#1c5b48;color:var(--txt)}
+  button.calc{margin-top:10px;background:var(--grad);color:#04121a;font-weight:800;border:none;border-radius:12px;padding:14px 28px;cursor:pointer;font-size:15px}
+  footer{color:var(--mut);font-size:13px;text-align:center;padding:40px 20px 70px}
+  a.link{color:var(--acc);text-decoration:none}
+</style>
+</head>
+<body>
+  <div class="hero">
+    <div class="bg"></div>
+    <div class="orb o1"></div>
+    <div class="orb o2"></div>
+    <div class="hero-inner">
+      <img src="/icon-512.png" alt="Remote Income System" style="width:56px;height:56px;border-radius:14px;margin-bottom:18px" />
+      <div class="kick">For Nigerians & Africans who want dollar income</div>
+      <h1>You don't need to leave the country to earn in <b>dollars</b>.</h1>
+      <p class="sub">A done-for-you system that helps you land a remote, dollar-paying job — with AI-built application materials, vetted platforms, and a weekly live feed.</p>
+      <a class="cta" href="index.html">Get the System — ₦30,000</a>
+      <div class="trust">Card · Bank transfer · Paid to your local account · 7-day guarantee</div>
+    </div>
+  </div>
+
+  <section class="reveal">
+    <div class="glass">
+      <h2>What's your Remote Readiness Score?</h2>
+      <p>Most people think they're not qualified. They're just not positioned. Answer 4 quick questions and see your score — and your <b>potential</b> score. Screenshot it. That gap is what we close.</p>
+      <div class="score-wrap">
+        <div class="score-card"><div class="score-num" id="cur">?</div><div class="score-lbl">YOUR READINESS</div></div>
+        <div class="score-card"><div class="score-num" id="pot">?</div><div class="score-lbl">YOUR POTENTIAL</div></div>
+      </div>
+      <div class="quiz" id="quiz">
+        <div class="q"><span>1. Do you have a CV tuned for remote roles?</span>
+          <input type="radio" name="q1" id="q1a" value="0"><label for="q1a">No, it's generic</label>
+          <input type="radio" name="q1" id="q1b" value="1"><label for="q1b">Roughly, not tailored</label>
+          <input type="radio" name="q1" id="q1c" value="2"><label for="q1c">Yes, ATS-optimized</label></div>
+        <div class="q"><span>2. Which platforms do you apply on?</span>
+          <input type="radio" name="q2" id="q2a" value="0"><label for="q2a">Only LinkedIn / Indeed</label>
+          <input type="radio" name="q2" id="q2b" value="1"><label for="q2b">A few remote boards</label>
+          <input type="radio" name="q2" id="q2c" value="2"><label for="q2c">Vetted Africa-friendly platforms</label></div>
+        <div class="q"><span>3. How do you follow up after applying?</span>
+          <input type="radio" name="q3" id="q3a" value="0"><label for="q3a">I don't</label>
+          <input type="radio" name="q3" id="q3b" value="1"><label for="q3b">Sometimes, no script</label>
+          <input type="radio" name="q3" id="q3c" value="2"><label for="q3c">With a follow-up script</label></div>
+        <div class="q"><span>4. Do you know which roles pay in USD from Africa?</span>
+          <input type="radio" name="q4" id="q4a" value="0"><label for="q4a">No idea</label>
+          <input type="radio" name="q4" id="q4b" value="1"><label for="q4b">A few</label>
+          <input type="radio" name="q4" id="q4c" value="2"><label for="q4c">Yes, a clear list</label></div>
+        <button class="calc" onclick="calc()">Calculate my score</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="glass">
+      <h2>Why ₦30,000 changes the equation</h2>
+      <p>The system gives you the resume engine, the 50 vetted platforms that actually hire from Africa, interview scripts, and a weekly feed — so you stop competing in the loud rooms and start landing dollar roles.</p>
+      <a class="cta" href="index.html">Get the System — ₦30,000</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Remote Income System · <a class="link" href="index.html">Back to checkout</a><br/>
+    support@remoteincomesystem.com
+  </footer>
+
+<script>
+  // scroll reveal
+  const io = new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  // scorecard (client-side, honest: it's an engagement tool, not a guarantee)
+  function calc(){
+    let s=0; for(let i=1;i<=4;i++){const c=document.querySelector(`input[name=q${i}]:checked`); if(c) s+=+c.value;}
+    const cur = s*12 + 10;          // 10..82
+    const pot = Math.min(99, cur + (4-s)*9 + 8); // potential always higher
+    document.getElementById('cur').textContent = cur;
+    document.getElementById('pot').textContent = pot;
+    document.getElementById('quiz').scrollIntoView({behavior:'smooth'});
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="manifest" href="/manifest.webmanifest" />
+<meta name="theme-color" content="#05070f" />
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => navigator.serviceWorker.register("/sw.js").catch(() => {}));
+  }
+</script>
+<title>The Remote Income System — Land a Dollar-Paying Job from Nigeria</title>
+<meta name="description" content="A done-for-you system that helps Africans land remote, dollar-paying jobs: AI resume & cover letter engine, vetted job platforms, interview scripts, and a weekly live opportunities feed." />
+<style>
+  :root{
+    --bg:#0a0e1a; --panel:#11162b; --panel2:#171d3a; --line:#2a3360;
+    --txt:#eaf0ff; --mut:#9fb0d8; --acc:#37f5c4; --acc2:#6c8bff; --warn:#ffb020;
+    --grad:linear-gradient(135deg,#37f5c4,#6c8bff);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    background:
+      radial-gradient(1200px 600px at 80% -10%, rgba(108,139,255,.18), transparent 60%),
+      radial-gradient(900px 500px at 0% 10%, rgba(55,245,196,.14), transparent 55%),
+      var(--bg);
+    color:var(--txt);line-height:1.55;-webkit-font-smoothing:antialiased
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 18px}
+  header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+  .logo{font-weight:800;letter-spacing:.5px}
+  .logo span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .pill{font-size:12px;color:var(--mut);border:1px solid var(--line);padding:6px 12px;border-radius:999px}
+  .hero{padding:40px 0 26px;text-align:center}
+  .kicker{display:inline-block;font-size:13px;color:var(--acc);border:1px solid #1c5b48;background:#0f2a22;padding:7px 14px;border-radius:999px;margin-bottom:18px}
+  h1{font-size:34px;line-height:1.15;font-weight:800;margin-bottom:14px}
+  h1 b{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:var(--mut);font-size:17px;max-width:560px;margin:0 auto 26px}
+  .priceRow{display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap;margin-bottom:8px}
+  .price{font-size:30px;font-weight:800}
+  .price s{color:var(--mut);font-size:18px;font-weight:500;margin-right:8px}
+  .cta{display:block;width:100%;max-width:420px;margin:18px auto 0;background:var(--grad);color:#04121a;font-weight:800;font-size:17px;border:none;border-radius:14px;padding:16px;cursor:pointer}
+  .cta:active{transform:translateY(1px)}
+  .trust{color:var(--mut);font-size:13px;text-align:center;margin-top:10px}
+  section{padding:34px 0;border-top:1px solid var(--line)}
+  h2{font-size:24px;font-weight:800;margin-bottom:14px}
+  .pain{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:12px}
+  .pain h3{font-size:17px;margin-bottom:6px}
+  .pain p{color:var(--mut);font-size:15px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}
+  .card .n{display:inline-flex;width:26px;height:26px;align-items:center;justify-content:center;background:var(--grad);color:#04121a;border-radius:8px;font-weight:800;font-size:13px;margin-bottom:10px}
+  .card h3{font-size:16px;margin-bottom:6px}
+  .card p{color:var(--mut);font-size:14px}
+  .live{background:#0f2a22;border:1px solid #1c5b48;border-radius:14px;padding:16px;margin-top:14px}
+  .live .dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--acc);margin-right:7px;box-shadow:0 0 0 4px #114b3a}
+  .live b{color:var(--acc)}
+  .how{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px}
+  .how .num{flex:0 0 30px;height:30px;background:var(--panel2);border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--acc2)}
+  .guar{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px;text-align:center}
+  .guar h3{font-size:19px;margin-bottom:8px}
+  .guar p{color:var(--mut);font-size:15px}
+  form{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;max-width:420px;margin:0 auto}
+  label{display:block;font-size:13px;color:var(--mut);margin:0 0 6px}
+  input{width:100%;background:#0b0f1a;border:1px solid var(--line);border-radius:10px;padding:12px;color:var(--txt);font-size:15px;margin-bottom:14px}
+  .faq{margin-bottom:12px}
+  .faq q{font-style:normal;font-weight:700;display:block;margin-bottom:4px}
+  .faq p{color:var(--mut);font-size:14px}
+  footer{color:var(--mut);font-size:13px;text-align:center;padding:30px 0 50px}
+  @media(max-width:560px){h1{font-size:27px}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo"><img src="/icon-192.png" alt="Remote Income System" style="width:28px;height:28px;border-radius:7px;vertical-align:middle;margin-right:8px">Remote<span>Income</span> System</div>
+    <a class="pill" href="aura.html" style="text-decoration:none;color:var(--mut)">See your readiness score →</a>
+  </header>
+
+  <div class="hero">
+    <div class="kicker">For Nigerians & Africans who want dollar income</div>
+    <h1>You don't need to leave the country to earn in <b>dollars</b>.</h1>
+    <p class="sub">A done-for-you system that helps you land a remote, dollar-paying job — with AI-built application materials, a vetted list of platforms that actually hire from Africa, and a live feed of opportunities we update every week.</p>
+    <div class="priceRow">
+      <div class="price"><s>$29</s>$19</div>
+      <div class="pill">≈ ₦30,000 · one-time · lifetime updates</div>
+    </div>
+    <form id="paystack-form">
+      <label for="email">Email where we send your access</label>
+      <input id="email" type="email" placeholder="you@example.com" required />
+      <button class="cta" type="submit">Get the System — $19</button>
+    </form>
+    <div class="trust">Pay in USD, card, or bank transfer · Paid to your local account · 7-day money-back guarantee</div>
+  </div>
+
+  <section>
+    <h2>The problem isn't your skill. It's the system.</h2>
+    <div class="pain">
+      <h3>You're qualified, but your CV reads like everyone else's.</h3>
+      <p>Recruiters skim for 6 seconds. A generic CV gets filtered before a human sees it — no matter how good you are.</p>
+    </div>
+    <div class="pain">
+      <h3>You apply on the same 3 sites everyone mentions.</h3>
+      <p>The best remote roles for Africans are on platforms nobody talks about. You're competing in the loudest rooms and missing the quiet ones.</p>
+    </div>
+    <div class="pain">
+      <h3>You ghost after one rejection.</h3>
+      <p>Remote hiring is a numbers + follow-up game. Without a script, you quit at the first "we went with another candidate."</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>What you get</h2>
+    <div class="grid">
+      <div class="card"><div class="n">1</div><h3>AI Resume & Cover Letter Engine</h3><p>Copy-paste prompts that turn your experience into a recruiter-ready, ATS-proof application in minutes.</p></div>
+      <div class="card"><div class="n">2</div><h3>50 Vetted Remote Platforms</h3><p>The platforms that genuinely hire from Africa, with what they pay and who they want — not the usual suspects.</p></div>
+      <div class="card"><div class="n">3</div><h3>Interview Script Pack</h3><p>Exact answers to the 20 questions remote managers ask, plus the follow-up email that gets you to round two.</p></div>
+      <div class="card"><div class="n">4</div><h3>Freelance Pitch Templates</h3><p>Cold pitches and proposals that land first clients on Upwork, Toptal, and direct outreach.</p></div>
+      <div class="card"><div class="n">5</div><h3>Visa & Relocation Lite Guide</h3><p>The legal, low-cost paths to relocate or stay remote — without a broker scam.</p></div>
+      <div class="card"><div class="n">6</div><h3>Weekly Live Opportunities Feed</h3><p>New roles and platforms we verify and post every week, so the system stays current as the market moves.</p></div>
+    </div>
+    <div class="live"><span class="dot"></span><b>Living product:</b> as the remote market changes, we update the kit. Buy once — the system keeps getting better.</div>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <div class="how"><div class="num">1</div><div><b>Pay ₦30,000.</b> Card or bank transfer via Paystack. Instant access to your member area.</div></div>
+    <div class="how"><div class="num">2</div><div><b>Run the engine.</b> Answer a few questions, get a finished resume + cover letter tuned for remote roles.</div></div>
+    <div class="how"><div class="num">3</div><div><b>Apply through the vetted list.</b> Skip the crowded boards. Use the scripts to follow up and close.</div></div>
+    <div class="how"><div class="num">4</div><div><b>Keep the feed.</b> New opportunities land weekly. You apply, interview, and get hired — in dollars.</div></div>
+  </section>
+
+  <section>
+    <div class="guar">
+      <h3>7-Day Money-Back Guarantee</h3>
+      <p>Use the full system. If you don't feel it's worth far more than ₦30,000, email us and we refund you — no forms, no arguments.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Go further: Remote Income Club</h2>
+    <div class="card" style="border-color:#1db954">
+      <h3 style="color:var(--accent)">₦5,000/month — the system that keeps paying you</h3>
+      <p>The kit gets you started. The Club keeps you earning: weekly live roles, monthly Q&A, fresh templates, private Telegram, and 50% off every new product. Cancel anytime.</p>
+      <p class="sub" style="margin-top:8px"><b>Founding Lifetime — ₦30,000 once, forever</b> (first 50 buyers, then closes). <a href="club.html" style="color:var(--accent)">See the Club →</a></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Our other product: Freelance Gig Machine</h2>
+    <div class="card" style="border-color:#37f5c4">
+      <h3 style="color:#37f5c4">₦30,000 — land dollar clients, not a boss</h3>
+      <p>Don't want a remote job? Build freelance income instead. The niche-pick formula, profile prompts, 20-proposal pack, rate ladder, and client-retention system — plus a weekly live gigs feed.</p>
+      <p class="sub" style="margin-top:8px"><b>Founding Bundle — ₦50,000 (both products, lifetime + 3mo Club free).</b> <a href="freelance.html" style="color:#37f5c4">See Freelance Gig Machine →</a></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Questions</h2>
+    <div class="faq"><q>Do I need to live abroad?</q><p>No. Every method here is built for someone applying from Nigeria or anywhere in Africa.</p></div>
+    <p>No. It's a system for real remote jobs and freelance work. It takes effort — but it removes the guesswork and the crowded rooms.</p></div>
+    <div class="faq"><q>Why is it ₦30,000?</q><p>Because the goal is to get you earning in dollars fast. The value is in the system, not the price tag.</p></div>
+    <div class="faq"><q>How do updates work?</q><p>The opportunities feed and platform list are refreshed weekly. Your access never expires.</p></div>
+  </section>
+
+  <footer>
+    © 2026 Remote Income System. Built for Africans going global.<br/>
+    For support or refunds: enochchibuchinkwo@gmail.com
+  </footer>
+</div>
+
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<script src="paystack.js"></script>
+</body>
+</html>
